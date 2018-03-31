@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SyneScribble</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Fontawesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- RESET CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Chicle|Open+Sans" rel="stylesheet">
   <!-- OUR STYLESHEET -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- JQUERY CDN -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <!-- PAPER.JS -->
@@ -20,8 +22,8 @@
   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
 
 </head>
-<body>
 
+<body>
 
   <nav class="navbar navbar-default navbar-top">
     <div class="container-fluid">
@@ -34,11 +36,52 @@
       </ul>
     </div>
   </nav>
+
   
+<!-- canvas element -->
 
 
   
-  
-  <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+  <div class="row">
+    <div class="footer navbar-fixed-bottom col-sm-12">
+     
+
+        <div class="col-sm-5">
+          <!-- <p class="text-center" id="gridTxt">Grid Toggle</p>
+          <input type="checkbox" checked data-toggle="toggle"> -->
+        <button type="button" class="btn">Gallery</button>
+        </div>
+
+        
+        <div class="col-sm-5" id="techList"> 
+          <!-- middle section for list of tech used -->
+          <p class="techListTitle">Technologies Used</p>
+          <ul>
+            <li>paper.js</li>
+            <li>the color API</li>
+            <li>other API</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2" id="github">
+          <!-- github repo -->
+          <p class="text-white">Checkout the project on Github!</p>
+          <i class="fa fa-github fa-4x"></i>
+          
+        </div>
+          
+      </div>
+  </div>
+
+
+</div> <!-- closing tag for container -->
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- JS file link -->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
 </body>
 </html>
