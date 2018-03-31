@@ -1,4 +1,5 @@
 body {
+
     /* display: flex;
     flex-direction: column; */
     height: 100vh;
@@ -20,4 +21,10 @@ body {
 
 .nav.navbar-nav {
     padding: 30px;
+=======
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+
 }
