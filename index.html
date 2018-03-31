@@ -10,18 +10,31 @@
   <link href="https://fonts.googleapis.com/css?family=Chicle|Open+Sans" rel="stylesheet">
   <!-- OUR STYLESHEET -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- JQUERY CDN -->
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <!-- PAPER.JS -->
   <script type="text/javascript" src="assets/javascript/paper-full.min.js"></script>
   <!-- FIREBASE -->
   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
 </head>
 <body>
-  <header><h1>Header</h1></header>
+
+  <nav class="navbar navbar-default navbar-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <h1 id="appTitle">SyneScribble</h1>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <button id="userLogin">Login</button>
+        <button id="createAccount">Create an Account</button>
+      </ul>
+    </div>
+  </nav>
+  
+
+  
   <!-- OUR SCRIPTS -->
   
   <script type="text/javascript" src="assets/javascript/app.js"></script>
