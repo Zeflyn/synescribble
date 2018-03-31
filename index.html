@@ -4,8 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SyneScribble</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Bootstrap Toggle -->
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
   <!-- RESET CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Chicle|Open+Sans" rel="stylesheet">
   <!-- OUR STYLESHEET -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <!-- JQUERY CDN -->
@@ -17,12 +23,53 @@
   <script type="text/javascript" src="assets/javascript/paper-full.min.js"></script>
   <!-- FIREBASE -->
   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+
 </head>
+
 <body>
-  <!-- OUR SCRIPTS -->
-  <script type="text/javascript" src="assets/javascript/app.js"></script>
+<div class="container-fluid">
+  <div class="row"> <!-- header row -->
+    <header></header>
+
+  </div>
+
+  
+<!-- canvas element -->
 
 
-  <footer>footer test part 2</footer>
+  
+
+  <div class="row">
+    <div class="footer navbar-fixed-bottom text-center col-sm-12">
+     
+
+        <div class="col-sm-5">
+          <p class="text-center" id="gridTxt">Grid Toggle</p>
+          <input type="checkbox" checked data-toggle="toggle">
+        <button type="button" class="btn">Gallery</button>
+
+        
+        <div class="col-sm-5"> 
+          <!-- middle section for list of tech used -->
+          <p class="text-center">Technologies Used</p>
+          <ul>
+            <li>paper.js</li>
+            <li>the color API</li>
+            <li>other API</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <!-- github repo -->
+        </div>
+          
+      </div>
+  </div>
+
+</div> <!-- closing tag for container -->
+
+<!-- bootstrap toggle script -->
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
