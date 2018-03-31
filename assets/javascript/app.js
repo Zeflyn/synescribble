@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  // Firebase Config
+  Firebase Config
   var config = {
     apiKey: "AIzaSyBIxDWLxlf5c7pARWt5wL1LhhiODNA3LMY",
     authDomain: "synescribble.firebaseapp.com",
