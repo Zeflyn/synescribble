@@ -14,12 +14,8 @@
   <link href="https://fonts.googleapis.com/css?family=Chicle|Open+Sans" rel="stylesheet">
   <!-- OUR STYLESHEET -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
   <!-- JQUERY CDN -->
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <!-- PAPER.JS -->
   <script type="text/javascript" src="assets/javascript/paper-full.min.js"></script>
   <!-- FIREBASE -->
@@ -28,11 +24,18 @@
 </head>
 
 <body>
-<div class="container-fluid">
-  <div class="row"> <!-- header row -->
-    <header></header>
 
-  </div>
+  <nav class="navbar navbar-default navbar-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <h1 id="appTitle">SyneScribble</h1>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <input type="text" placeholder="Enter a username">
+        <button id="userJoin">Join</button>
+      </ul>
+    </div>
+  </nav>
 
   
 <!-- canvas element -->
@@ -71,11 +74,14 @@
       </div>
   </div>
 
+
 </div> <!-- closing tag for container -->
+
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <!-- JS file link -->
 <script type="text/javascript" src="assets/javascript/app.js"></script>
+
 </body>
 </html>

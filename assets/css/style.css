@@ -1,4 +1,3 @@
-
 /* grid paper styling for background */
 body {
     font-size: 93.8%;    
@@ -20,6 +19,28 @@ body {
       linear-gradient(rgba(0,0,0,.05) .062500em, transparent .062500em);
     background-size: .75em .75em;  
     background-position: 0 -0.5em; 
+  
+   /* display: flex;
+    flex-direction: column; */
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar-top {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000000, #535353e3); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000000, #535353e3);
+  padding: 2px;
+}
+
+#appTitle {
+    font-family: 'Chicle', cursive;
+    color: white;
+    font-size: 50px;
+}
+
+.nav.navbar-nav {
+    padding: 30px;
 }
 
 .footer{
@@ -50,4 +71,5 @@ flex-direction: row;
 #github {
     flex-direction: row;
 }
+
 
