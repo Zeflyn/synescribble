@@ -1,7 +1,6 @@
 
 /* grid paper styling for background */
 body {
-  font-size: 93.8%;    
   background-color: #f1f2f3; 
   background-image: 
     -webkit-linear-gradient(0deg, transparent .05em, rgba(0,0,0,.05) .05em, rgba(0,0,0,.05) .125000em, transparent .125000em),
