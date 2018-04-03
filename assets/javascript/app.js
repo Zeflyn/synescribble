@@ -78,6 +78,36 @@ $(document).ready(() => {
    project.clear();
  });
 
+
+ $('#pickColor').on("click", function(){
+  // mode choices: monochrome monochrome-dark monochrome-light analogic complement analogic-complement triad quad
+  // analogic-complement mode gives colors that are adjacent and across from each other on the color wheel
+  var hex = "0047AB";
+  var queryURL = "https://crossorigin.me/http://thecolorapi.com/scheme?" + hex + "&rgb=0,71,171&hsl=215,100%,34%&cmyk=100,58,0,33&format=json&mode=analogic-complement&count=6" 
+
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+
+}).done(function(response){
+console.log(response);
+
+var colorApi = response.data;
+
+var emptydiv = $('<div id="colorSq">');
+console.log(emptydiv);
+
+$('#colorSq').append(colorApi[i].colors[0].image.bare);
+    });
+    
+
+  
+   
+
+
+  });
+
+
  // Example button that scales the image of the gallery images down
  $("#scale").on("click", function() {
    $(".myCanvas").toggleClass("scale");
