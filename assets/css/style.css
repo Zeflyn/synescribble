@@ -50,25 +50,32 @@ canvas {
   width: 400px;
   height: 400px;
 }
+
 .footer{
-background: #000000;  
-background: -webkit-linear-gradient(to right, #535353e3, #000000);  
-background: linear-gradient(to right, #535353e3, #000000); 
-font-family: 'open sans';
-color: white;
-display: flex;
-flex-direction: row;
-}
-#gridTxt {
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #535353e3, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #535353e3, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
-  
-}
-.btn {
-  align-content: left;
-}
-#techListTitle {
-  font-family: 'Chicle', cursive;
-}
-#github {
+  display: flex;
   flex-direction: row;
-}
+  }
+  
+  
+  #galleryBtn {
+      margin-bottom: 10pt;
+   
+  }
+  
+  
+  
+  .footerTitle {
+      font-family: 'Chicle', cursive;
+      font-size: 20pt;
+      padding: 5pt;
+  }
+  
+  #techList {
+    display: flex;
+    flex-direction: column;
+  
+  }
