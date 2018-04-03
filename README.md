@@ -8,12 +8,15 @@ TheColorAPI
 Twitter API
 Imgur API
 
-Aarick
+# Aarick
+
 Paper.js and Firebase interaction
 
-Michael
+# Michael
+
 Bootstrap implementation and page design
 
-Lisa
+# Lisa
+
 The Color API Implementation and Page Design
 
