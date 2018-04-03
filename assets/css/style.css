@@ -1,0 +1,23 @@
+.myCanvas {
+  width: 400px;
+  height: 400px;
+  border: 2px solid #000;
+  transform: scale(0.5);
+}
+
+#drawingSurface {
+  width: 400px;
+  height: 400px;
+  border: 2px solid #000;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scale {
+  transform: scale(0.25);
+}
