@@ -24,14 +24,10 @@ $(document).ready(() => {
   let color = "#000";
   // Initialize a variable to create paths in our drawing functions
   let path;
-
-  // let drawing = {
-  //   paths: [],
-  //   colors: [],
-  //   creator: ""
-  // };
-
-  // let line = [];
+  let drawing = {
+    artist: "",
+    image: ""
+  };
   
 
   // On mouse down...
@@ -45,7 +41,6 @@ $(document).ready(() => {
       // the width of the stroke is set to 5 pixels
       strokeWidth: 5
     });
-    // drawing.colors.push(color);
   }
 
   // On mouse drag...
@@ -53,15 +48,12 @@ $(document).ready(() => {
     // Every time the mouse is dragged, a point given to us by the event argument is added
     // to the segments array
     path.add(e.point);
-    // line.push(e.point);
   }
 
   // On mouse up...
   tool.onMouseUp = e => {
     // .simplfy, a Paper.js method, "smooths" the line and removes imperfections
     path.simplify(10);
-    // drawing.paths.push(line);
-    // console.log(drawing);
   }
 
   // These are example color switch buttons
@@ -77,15 +69,11 @@ $(document).ready(() => {
   $("#submit").on("click", () => {
     // Convert Drawing Surface to image data
     let canvasImage = canvas.toDataURL();
+    let artist = $("#artist").val().trim();
+    drawing.image = canvasImage;
+    drawing.artist = artist;
     // Push image data to the database
-    database.ref().push(canvasImage);
-
-    // drawing = {
-    //   paths: [],
-    //   colors: [],
-    //   creator: ""
-    // };
-
+    database.ref().push(drawing);
     // Clear the current drawing surface
     project.clear();
   });
@@ -105,7 +93,7 @@ $(document).ready(() => {
 
   // Function that handles the creation of the gallery item
   function makeCanvas(drawing) {
-    let canvasItem = $("<img src='" + drawing + "' class='myCanvas'/>");
+    let canvasItem = $("<div><img src='" + drawing.image + "' class='myCanvas'/><p>" + drawing.artist + "</p></div>");
     let databaseDrawing = canvasItem;
     $("#gallery").append(canvasItem);
   }
