@@ -8,10 +8,10 @@
  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
  <!-- GOOGLE FONTS -->
  <link href="https://fonts.googleapis.com/css?family=Chicle|Open+Sans" rel="stylesheet">
+ <!-- Bootstrap -->
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
  <!-- OUR STYLESHEET -->
  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
- <!-- Bootstrap -->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  <!-- JQUERY CDN -->
  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
  <!-- PAPER.JS -->
@@ -21,35 +21,26 @@
 </head>
 <body>
 
- 
- <nav class="navbar navbar-default navbar-top">
-   <div class="container">
-     <div class="container-fluid">
-       <div class="navbar-header">
-         <h1 id="appTitle">SyneScribble</h1>
-       </div>
-     </div>
-   </div>
- </nav>
-
- <div class="container">
-   <div class="colorPalette"><u>Choose a Color</u></div>
-   <br>
-   <br>
-   <canvas id="userCanvas" style="border:1px solid #000000;"></canvas>
-   <br>
-   <br>
-   <input type="text" placeholder="Created by...."><button>Submit</button>
-   <br>
-   <br>
- </div>
-
- <div class="pictureGallery">
-   
- </div>
+<div id="lander">
+  <header id="myNav">
+    <h1 id="brand">SyneScribble</h1>
+  </header>
+  <div class="container">
+    <div class="colorPalette">
+      <u>Choose a Color</u>
+    </div>
+    <div id="canvasBox">
+      <canvas id="drawingSurface"></canvas>
+    </div>
+    <div id="nameSubmit">
+      <input id="artist" type="text" placeholder="Created by....">
+      <button>Submit</button>
+    </div>
+  </div>
+</div>
  
 
  
- <script type="text/javascript" src="assets/javascript/app.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
