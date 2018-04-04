@@ -1,20 +1,33 @@
+paper.install(window);
+
 $(document).ready(() => {
+ // Firebase setup
+ var config = {
+   apiKey: "AIzaSyBIxDWLxlf5c7pARWt5wL1LhhiODNA3LMY",
+   authDomain: "synescribble.firebaseapp.com",
+   databaseURL: "https://synescribble.firebaseio.com",
+   projectId: "synescribble",
+   storageBucket: "",
+   messagingSenderId: "648660572319"
+ };
+ firebase.initializeApp(config);
 
-  // var config = {
-  //   apiKey: "AIzaSyBIxDWLxlf5c7pARWt5wL1LhhiODNA3LMY",
-  //   authDomain: "synescribble.firebaseapp.com",
-  //   databaseURL: "https://synescribble.firebaseio.com",
-  //   projectId: "synescribble",
-  //   storageBucket: "",
-  //   messagingSenderId: "648660572319"
-  // };
-  // firebase.initializeApp(config);
+ // Assigning our Database and our Canvas to a variable
+ const database = firebase.database();
+ const canvas = document.getElementById("drawingSurface");
+ // Initializing Paper.js to avoid scope issues
+ paper.setup(canvas);
 
-  // var database = firebase.database();
-  // console.log(database);
-// });
- 
-$('#pickColor').hide();
+ // Paper.js Tool object constructor, handles the drawing functions below
+ const tool = new Tool();
+ // Default color assignment
+ let color = "#000";
+ // Initialize a variable to create paths in our drawing functions
+ let path;
+ let drawing = {
+   artist: "",
+   image: ""
+ };
 
   // On mouse down...
   tool.onMouseDown = e => {
@@ -69,7 +82,7 @@ $('#pickColor').hide();
     // mode choices: monochrome monochrome-dark monochrome-light analogic complement analogic-complement triad quad
     // analogic-complement mode gives colors that are adjacent and across from each other on the color wheel
     var hex = "0047AB";
-    var queryURL = "https://crossorigin.me/http://thecolorapi.com/scheme?" + hex + "&rgb=0,71,171&hsl=215,100%,34%&cmyk=100,58,0,33&format=json&mode=analogic-complement&count=6" 
+    var queryURL = "https://cors-anywhere.herokuapp.com/https:\/\/thecolorapi.com/scheme?" + hex + "&rgb=0,71,171&hsl=215,100%,34%&cmyk=100,58,0,33&format=json&mode=analogic-complement&count=6" 
 
     $.ajax({
       url: queryURL,
@@ -85,9 +98,10 @@ for (i = 0; i < colorApi.length; i++){
 $('#myCanvas').append(colorApi);
 console.log(img);
 
-}
-  });
+          }
+      });
 
+  });
 
   // Example button that scales the image of the gallery images down
   $("#scale").on("click", function() {
