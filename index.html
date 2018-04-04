@@ -8,10 +8,8 @@
  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
  <!-- GOOGLE FONTS -->
  <link href="https://fonts.googleapis.com/css?family=Chicle|Open+Sans" rel="stylesheet">
- <!-- Fontawesome CDN -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <!-- Bootstrap -->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
  <!-- OUR STYLESHEET -->
  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
  <!-- JQUERY CDN -->
@@ -23,35 +21,26 @@
 </head>
 <body>
 
- 
- <nav class="navbar navbar-top">
-   <div class="container">
-     <!-- <div class="container-fluid"> -->
-       <div class="navbar-header">
-         <h1 id="appTitle">SyneScribble</h1>
-       </div>
-     <!-- </div> -->
-   </div>
- </nav>
-
- <div class="container">
-   <div class="colorPalette"><u>Choose a Color</u></div>
-   <br>
-   <br>
-   <canvas id="userCanvas" style="border:1px solid #000000;"></canvas>
-   <br>
-   <br>
-   <input type="text" placeholder="Created by...."><button>Submit</button>
-   <br>
-   <br>
- </div>
-
- <div class="pictureGallery">
-   
- </div>
+<div id="lander">
+  <header id="myNav">
+    <h1 id="brand">SyneScribble</h1>
+  </header>
+  <div class="container">
+    <div class="colorPalette">
+      <u>Choose a Color</u>
+    </div>
+    <div id="canvasBox">
+      <canvas id="drawingSurface"></canvas>
+    </div>
+    <div id="nameSubmit">
+      <input id="artist" type="text" placeholder="Created by....">
+      <button>Submit</button>
+    </div>
+  </div>
+</div>
  
  <!-- footer elements -->
- <div class="row">
+ <!-- <div class="row">
     <div class="footer navbar-fixed-bottom col-sm-12">
      
 
@@ -61,9 +50,9 @@
         </div>
 
         
-        <div class="col-sm-5"> 
+        <div class="col-sm-5">  -->
           <!-- middle section for list of tech used -->
-          <p class="footerTitle">Technologies Used</p>
+          <!-- <p class="footerTitle">Technologies Used</p>
           <ul>
             <a href="paper.js">
               <li id="techList">paper.js</li>
@@ -75,9 +64,9 @@
           </ul>
         </div>
 
-        <div class="col-sm-2">
+        <div class="col-sm-2"> -->
           <!-- github repo -->
-          <p class="footerTitle">Github Repository</p>
+          <!-- <p class="footerTitle">Github Repository</p>
             <a href="https://github.com/Aarick-F/synescribble">
               <i class="fa fa-github fa-4x"></i>
             </a>
@@ -85,8 +74,8 @@
         </div>
           
       </div>
-  </div>
+  </div> -->
  
- <script type="text/javascript" src="assets/javascript/app.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
