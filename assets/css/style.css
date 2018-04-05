@@ -149,8 +149,7 @@ font-family: 'open sans';
 color: white;
 display: flex;
 flex-direction: column;
-
-font-size: 8pt;
+font-size: 10pt;
 }
 
 #socialIcons {
@@ -160,7 +159,7 @@ font-size: 8pt;
 }
 
 .socialTitle {
-  margin-bottom: 15pt;
+  margin-top: 8pt;
 }
 
 #creatorsDiv {
@@ -171,7 +170,7 @@ font-size: 8pt;
 }
 
 #created {
-  margin-top: 10pt;
+  margin-top: 15pt;
   margin-right: 8pt;
   font-family: 'chicle';
   font-size: 16pt;
@@ -180,8 +179,9 @@ font-size: 8pt;
 .fa {
   margin-right: 5pt;
 }
+
 .names {
-  margin-top: 15pt;
+  margin-top: 18pt;
   margin-right: 10pt;
   margin-left: 10pt;
   align-content: center;
