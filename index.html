@@ -3,7 +3,7 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>SyneScribble</title>
+ <title>SyneScribble</title> 
  <!-- RESET CSS -->
  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
  <!-- GOOGLE FONTS -->
@@ -21,28 +21,28 @@
 </head>
 <body>
 
+<nav class="navbar navbar-default navbar-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h1 id="appTitle">SyneScribble</h1>
+    </div>   
+  </div>
+</nav>
+
 <div id="lander">
-  <header id="myNav">
-    <h1 id="brand">SyneScribble</h1>
-  </header>
   <div class="container">
-    <div class="colorPalette" style="font-size: 20px;">
+    <div class="colorPalette" style="font-size:20px;">
       <u>Choose a Color</u>
     </div>
     <div id="canvasBox">
       <canvas id="drawingSurface"></canvas>
     </div>
-    <div id="nameSubmit">
-      <input id="artist" type="text" placeholder="Created by....">
-      <button id="submit">Submit</button>
-    </div>
   </div>
-
-  <div id="userGallery">
-
+  <div id="submit">
+    <input id="artist" type="text" placeholder="Created by...">
+    <button id="submit">Submit</button>
   </div>
-
-
+  <div id="gallery"></div>
 </div>
  
 <script type="text/javascript" src="assets/javascript/app.js"></script>

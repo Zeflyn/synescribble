@@ -66,19 +66,19 @@ $(document).ready(() => {
   });
 
   // On submit click...
-  $("#nameSubmit").on("click", () => {
+  $("#submit").on("click", () => {
     // Convert Drawing Surface to image data
     let canvasImage = canvas.toDataURL();
     let artist = $("#artist").val().trim();
     drawing.image = canvasImage;
     drawing.artist = artist;
-    // Push image data to the database
+    // Push image data to the database 
     database.ref().push(drawing);
     // Clear the current drawing surface
     project.clear();
-    // Append the image into the gallery div
-    // Need to create a new image tag
-    $("#userGallery").append(canvasImage);
+    // Call the makeCanvas function
+    makeCanvas();
+    
   });
 
 
