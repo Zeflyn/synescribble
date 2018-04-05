@@ -66,7 +66,7 @@ $(document).ready(() => {
  });
 
  // On submit click...
- $("#submit").on("click", () => {
+ $("#nameSubmit").on("click", () => {
    // Convert Drawing Surface to image data
    let canvasImage = canvas.toDataURL();
    let artist = $("#artist").val().trim();
