@@ -1,5 +1,5 @@
 # SyneScribble
-__________________________________________________________________________________________________________________________________________
+
 Georgia Tech Coding Bootcamp
 Fullstack Web Development
 Project 1
