@@ -9,7 +9,9 @@
  <!-- GOOGLE FONTS -->
  <link href="https://fonts.googleapis.com/css?family=Chicle|Open+Sans" rel="stylesheet">
  <!-- Bootstrap -->
- <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <!-- Fontawesome CDN -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <!-- OUR STYLESHEET -->
  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
  <!-- JQUERY CDN -->
@@ -19,62 +21,91 @@
  <!-- FIREBASE -->
  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
 </head>
-<body>
+
+<body id="allContents">
 
 <div id="lander">
+
   <header id="myNav">
     <h1 id="brand">SyneScribble</h1>
   </header>
-  <div class="container">
-    <div class="colorPalette">
-      <u>Choose a Color</u>
+  
+
+ 
+  <div id="pgContents">
+
+    <div id="colorPalette">
+        <button id="colorBtn" class="btn btn-default" type="button">Generate a color</button>
     </div>
+
     <div id="canvasBox">
       <canvas id="drawingSurface"></canvas>
     </div>
-    <div id="nameSubmit">
-      <input id="artist" type="text" placeholder="Created by....">
-      <button>Submit</button>
+
+    <div class="input-group" id="submitArea">
+      <input id="artist" type="text" class="form-control" placeholder="Created by....">
+      <span class="input-group-btn">
+          <button class="btn btn-default" type="button" id="nameSubmit">Submit!</button>
+      </span>
     </div>
+
   </div>
+
 </div>
+
+<div id="gallery">
+  <!-- gallery elements -->
+</div>
+
+
+
+<footer class="siteFooter">
+<div class="text-center" id="socialIcons">
+  <p class="socialTitle">Checkout the repository!<br>
+    <a href="https://github.com/Aarick-F/synescribble">
+      <i class="fa fa-github fa-3x"></i>
+    </a>
+  </p>
+  
  
- <!-- footer elements -->
- <!-- <div class="row">
-    <div class="footer navbar-fixed-bottom col-sm-12">
-     
 
-        <div class="col-sm-5">
-          <p class="footerTitle">View the gallery!</p>
-        <button type="button" class="btn" id="galleryBtn">Gallery</button>
-        </div>
+<div id="creatorsDiv">
+  <p id="created">Created by:</p>
+  
+  
+  <p class="names">Aarick Farist | 
+    <a href="https://github.com/Aarick-F">
+    <i class="fa fa-github-square fa-2x"></i> 
+    </a>
+  </p>
 
-        
-        <div class="col-sm-5">  -->
-          <!-- middle section for list of tech used -->
-          <!-- <p class="footerTitle">Technologies Used</p>
-          <ul>
-            <a href="paper.js">
-              <li id="techList">paper.js</li>
-            </a>
-            <a href="http://www.thecolorapi.com/">
-              <li>the color API</li>
-            </a>
-            <li>other API</li>
-          </ul>
-        </div>
 
-        <div class="col-sm-2"> -->
-          <!-- github repo -->
-          <!-- <p class="footerTitle">Github Repository</p>
-            <a href="https://github.com/Aarick-F/synescribble">
-              <i class="fa fa-github fa-4x"></i>
-            </a>
-          
-        </div>
-          
-      </div>
-  </div> -->
+  
+  <p class="names">Michael Dibble | 
+    <a href="https://github.com/msdibble">
+    <i class="fa fa-github-square fa-2x"></i> 
+    </a>
+  </p>
+  
+
+  <p class="names">Lisa Huynh  
+    <a href="https://github.com/lhuynh1">
+    <i class="fa fa-github-square fa-2x"></i> 
+    </a>
+  </p>
+ 
+  
+</div>
+
+  <p class="socialTitle">Tweet about it!<br>
+    <a>
+    <i class="fa fa-twitter fa-3x"></i>
+    </a>
+  </p>
+
+  </div>
+</footer>
+ 
  
 <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
