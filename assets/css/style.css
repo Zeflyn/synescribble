@@ -1,4 +1,5 @@
 body {
+  
   font-size: 93.8%;    
   background-color: #f1f2f3; 
   background-image: 
@@ -18,20 +19,13 @@ body {
     inear-gradient(rgba(0,0,0,.05) .062500em, transparent .062500em);
   background-size: .75em .75em;  
   background-position: 0 -0.5em; 
+  font-family: 'open sans';
+  
+}
 
+#allContents {
   height: 100%;
   width: 100%;
-}
-
-.navbar {
-  background: linear-gradient(to right, #000, #434343);
-}
-
-#appTitle {
-  color: white;
-  font-size: 3em;
-  font-family: "Chicle", sans-seriff;
-  padding: 15px 0 15px 40px;
 }
 
 #lander {
@@ -42,8 +36,24 @@ body {
   align-items: center;
 }
 
+#myNav {
+  width: 100%;
+  background: #000000; 
+  background: -webkit-linear-gradient(left, #000000, #535353d0);
+  background: -o-linear-gradient(left, #000000, #535353d0);
+  background: linear-gradient(to right, #000000, #535353d0);
+  color: #FFF;
+  display: flex;
+  align-items: center;
+}
 
-/* .container {
+#brand {
+  font-size: 5em;
+  font-family: "Chicle", sans-seriff;
+  padding: 0px 0 10px 30px;
+}
+
+#pgContents {
   width: 70%;
   height: 100%;
   display: flex;
@@ -52,15 +62,19 @@ body {
   justify-content: space-around;
 } */
 
-.colorPalette {
+#colorPalette {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
+#colorBtn {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
 #drawingSurface {
-  background-color: rgba(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.555);
   width: 400px;
   height: 400px;
   border: 2px solid #000;
@@ -70,21 +84,61 @@ body {
   /*flex: 1;*/
   display: flex;
   align-items: center;
-  
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-#gallery {
+#submitArea {
+  width: 310pt;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.siteFooter {
+background: #000000;  
+background: -webkit-linear-gradient(to right, #535353d0, #000000);  
+background: linear-gradient(to right, #535353d0, #000000); 
+font-family: 'open sans';
+color: white;
+display: flex;
+flex-direction: column;
+font-size: 10pt;
+}
+
+#socialIcons {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  justify-content: space-around;
 }
 
-.myCanvas {
-  border: solid;
-  border-color: black;
-  background-color: white;
-  margin: 5px;
-  height: 50px;
-  width: 50px;
-  display: flex;
+.socialTitle {
+  margin-top: 8pt;
 }
+
+#creatorsDiv {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#created {
+  margin-top: 15pt;
+  margin-right: 8pt;
+  font-family: 'chicle';
+  font-size: 16pt;
+}
+
+.fa {
+  margin-right: 5pt;
+}
+
+.names {
+  margin-top: 18pt;
+  margin-right: 10pt;
+  margin-left: 10pt;
+  align-content: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+
