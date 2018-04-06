@@ -76,14 +76,14 @@ $(document).ready(() => {
    database.ref().push(drawing);
    // Clear the current drawing surface
    project.clear();
-   $('#artist').val("");
+   $("#artist").val("");
  });
 
 //  $('#colorBtn').on("click", function() {
 //   // mode choices: monochrome monochrome-dark monochrome-light analogic complement analogic-complement triad quad
 //   // analogic-complement mode gives colors that are adjacent and across from each other on the color wheel
 //   var hex = "0047AB";
-//   var queryURL = "https://thecolorapi.com/scheme?" + hex + "&rgb=0,71,171&hsl=215,100%,34%&cmyk=100,58,0,33&format=json&mode=analogic-complement&count=6" 
+//   var queryURL = "https://crossorigin.me/https://thecolorapi.com/scheme?" + hex + "&rgb=0,71,171&hsl=215,100%,34%&cmyk=100,58,0,33&format=json&mode=analogic-complement&count=6" 
 
 //   $.ajax({
 //     url: queryURL,
