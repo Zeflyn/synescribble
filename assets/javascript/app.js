@@ -121,7 +121,7 @@ $(document).ready(() => {
 
  // Function that handles the creation of the gallery item
  function makeCanvas(drawing) {
-   let canvasItem = $("<div><img src='" + drawing.image + "' class='myCanvas'/><p>" + drawing.artist + "</p></div>");
+   let canvasItem = $("<div><img src='" + drawing.image + "' class='myCanvas'/><p id = 'artistName'>" + drawing.artist + "</p></div>");
    let databaseDrawing = canvasItem;
    $("#gallery").append(canvasItem);
  }

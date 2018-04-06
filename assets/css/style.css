@@ -98,6 +98,11 @@ body {
   margin: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
+  flex-wrap: wrap;
+}
+
+#artistName {
+  text-align: center;
 }
 
 .myCanvas {
