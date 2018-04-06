@@ -76,6 +76,7 @@ $(document).ready(() => {
    database.ref().push(drawing);
    // Clear the current drawing surface
    project.clear();
+   $("#artist").val("");
  });
 
 //  $('#colorBtn').on("click", function() {
