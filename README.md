@@ -36,9 +36,9 @@ Paper.js, Firebase interaction, Twitter API
 
 ## Michael
 
-Bootstrap implementation and page design
+Bootstrap implementation, HTML markup (Header + dynamically updating gallery images), CSS Styling
 
 ## Lisa
 
-The Color API Implementation and Page Design
+The Color API Implementation, HTML markup (footer + dynamically generating color squares), CSS styling
 
