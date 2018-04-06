@@ -1,123 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>SyneScribble</title> 
- <!-- RESET CSS -->
- <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
- <!-- GOOGLE FONTS -->
- <link href="https://fonts.googleapis.com/css?family=Chicle|Open+Sans" rel="stylesheet">
- <!-- Bootstrap -->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- <!-- Fontawesome CDN -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <!-- OUR STYLESHEET -->
- <link rel="stylesheet" type="text/css" href="assets/css/style.css">
- <!-- JQUERY CDN -->
- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
- <!-- PAPER.JS -->
- <script type="text/javascript" src="assets/javascript/paper-full.min.js"></script>
- <!-- FIREBASE -->
- <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SyneScribble</title> 
+  <!-- RESET CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Chicle|Open+Sans" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Fontawesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- OUR STYLESHEET -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- JQUERY CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <!-- CODEBIRD -->
+  <script type="text/javascript" src="assets/javascript/codebird.js"></script>
+  <!-- PAPER.JS -->
+  <script type="text/javascript" src="assets/javascript/paper-full.min.js"></script>
+  <!-- FIREBASE -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
 </head>
 
 <body id="allContents">
 
-<!-- <nav class="navbar navbar-default navbar-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <h1 id="appTitle">SyneScribble</h1>
-    </div>   
-  </div>
-</nav> -->
-
-<div id="lander">
-
-  <header id="myNav">
-    <h1 id="brand">SyneScribble</h1>
-  </header>
-  
-
- 
-  <div id="pgContents">
-
-    <div id="colorPalette">
-        <button id="colorBtn" class="btn btn-default" type="button">Generate a color</button>
-    </div>
-
-    <div id="canvasBox">
-      <canvas id="drawingSurface"></canvas>
-    </div>
-
-    <div class="input-group" id="submitArea">
-      <input id="artist" type="text" class="form-control" placeholder="Created by....">
-      <span class="input-group-btn">
+  <div id="lander">
+    <header id="myNav">
+      <h1 id="brand">SyneScribble</h1>
+    </header>
+    <div id="pgContents">
+      <div id="colorPalette">
+        <div id="buttonSection">
+          <button id="colorBtn" class="btn btn-default" type="button">Generate Colors</button>
+          <button id="clear" class="btn btn-default" type="button">Clear Painting</button>
+        </div>
+        <div id="colorSection"></div>
+      </div>
+      <div id="canvasBox">
+        <canvas id="drawingSurface"></canvas>
+      </div>
+      <div class="input-group" id="submitArea">
+        <input id="artist" type="text" class="form-control" placeholder="Created by....">
+        <span class="input-group-btn">
           <button class="btn btn-default" type="button" id="nameSubmit">Submit!</button>
-      </span>
+        </span>
+      </div>
     </div>
-
   </div>
 
-</div>
-
-
-<!-- area to append gallery images -->
-<div id="gallery">
-  <!-- gallery elements -->
-</div>
-
-
-<!-- Footer contents -->
-<footer class="siteFooter">
-<div class="text-center" id="socialIcons">
-  <p class="socialTitle">Checkout the repository!<br>
-    <a href="https://github.com/Aarick-F/synescribble">
-      <i class="fa fa-github fa-3x"></i>
-    </a>
-  </p>
-  
- 
-
-<div id="creatorsDiv">
-  <p id="created">Created by:</p>
-  
-  
-  <p class="names">Aarick Farist | 
-    <a href="https://github.com/Aarick-F" target="blank">
-    <i class="fa fa-github-square fa-2x"></i> 
-    </a>
-  </p>
-
-
-  
-  <p class="names">Michael Dibble | 
-    <a href="https://github.com/msdibble" target="blank">
-    <i class="fa fa-github-square fa-2x"></i> 
-    </a>
-  </p>
-  
-
-  <p class="names">Lisa Huynh  
-    <a href="https://github.com/lhuynh1" target="blank">
-    <i class="fa fa-github-square fa-2x"></i> 
-    </a>
-  </p>
- 
-  
-</div>
-
-  <p class="socialTitle">Tweet about it!<br>
-    <a>
-    <i class="fa fa-twitter fa-3x"></i>
-    </a>
-  </p>
-
+  <!-- area to append gallery images -->
+  <div id="gallery">
+    <!-- gallery elements -->
   </div>
-</footer>
+
+  <!-- Footer contents -->
+  <footer class="siteFooter">
+    <div class="text-center" id="socialIcons">
+      <p class="socialTitle">Checkout the repository!<br>
+        <a href="https://github.com/Aarick-F/synescribble">
+          <i class="fa fa-github fa-3x"></i>
+        </a>
+      </p>
+      <div id="creatorsDiv">
+        <p id="created">Created by:</p>
+        <p class="names">Aarick Farist | 
+          <a href="https://github.com/Aarick-F" target="blank">
+            <i class="fa fa-github-square fa-2x"></i> 
+          </a>
+        </p>
+        <p class="names">Michael Dibble | 
+          <a href="https://github.com/msdibble" target="blank">
+            <i class="fa fa-github-square fa-2x"></i> 
+          </a>
+        </p>
+        <p class="names">Lisa Huynh  
+          <a href="https://github.com/lhuynh1" target="blank">
+            <i class="fa fa-github-square fa-2x"></i> 
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
  
  
-<script type="text/javascript" src="assets/javascript/app.js"></script>
-<script type="text/javascript" src="assets/javascript/colorapi.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+  <script type="text/javascript" src="assets/javascript/colorapi.js"></script>
 </body>
 </html>
