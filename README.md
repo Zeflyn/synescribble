@@ -1,7 +1,21 @@
 # synescribble
-Aarick Farist, Michael Dibble, Lisa Huynh
+_________________________________________________
+Georgia Tech Coding Bootcamp
+Fullstack Web Development
+Project 1
 
-Utilizing Paper.js and Firebase to create a dynamically updated collaborative painting canvas.
+## Our Team
+*Aarick Farist 
+*Michael Dibble
+*Lisa Huynh
+
+### What is this? 
+
+
+## Built with
+
+* [Paper.js] and 
+* Firebase to create a dynamically updated collaborative painting canvas.
 
 APIs:
 TheColorAPI
