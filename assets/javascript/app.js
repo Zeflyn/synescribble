@@ -65,12 +65,8 @@ $(document).ready(() => {
   }
   
 
-// On color selection.. grab the data-color attribute containing the hex values
-<<<<<<< HEAD
-  $(document).on("click", ".colorSq" function(){
-=======
+  // On color selection.. grab the data-color attribute containing the hex values
   $(document).on("click", ".colorSq", function(){
->>>>>>> 7c799b7fdf2d6c5caca6531a5e799fbd226d4afc
     color = $(this).attr("data-color");
     console.log(color);
   });
