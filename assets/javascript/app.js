@@ -3,8 +3,10 @@ paper.install(window);
 // Default color assignment
 // moving color variable out here to it can communicate with colorapi.js
 
-var color = "";
+var color;
 console.log(color);
+
+
 $(document).ready(() => {
   // Firebase setup
   var config = {

@@ -1,5 +1,3 @@
-var hexColor = "";
-var color = hexColor;
 
 $(document).ready(() => {
   $('#colorBtn').on("click", function() {
@@ -15,14 +13,19 @@ $(document).ready(() => {
         console.log(response.colors);
         var colorApi = response.colors;
         for (i = 0; i < colorApi.length; i++){
-          var colorSq = $('<div class="colorSq">').addClass("thumbnail");
+          var colorSq = $('<div>').addClass('colorSq');
           var hexColor = colorApi[i].hex.value;
-          console.log(hexColor);
+
           colorSq.attr("data-color", hexColor);
           colorSq.css("background", hexColor);
          $('#colorSection').append(colorSq);
         }
       });
+  });
+
+  $('.colorSq').on("click", function(){
+   color = $(this).attr('data-color', hexColor);
+    console.log(this);
   });
 
   function makeColor() {
