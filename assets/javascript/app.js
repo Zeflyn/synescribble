@@ -99,7 +99,7 @@ $(document).ready(() => {
           "statuses_update",
           {
             "media_ids": imageID,
-            "status": "Created By: " + artist
+            "status": "Created By: " + artist + " #synescribble"
           },
           function (reply, rate, err) {
             if(err) {
