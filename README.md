@@ -1,5 +1,7 @@
 # SyneScribble
 
+Check it out here: https://aarick-f.github.io/synescribble/
+
 Georgia Tech Coding Bootcamp
 Fullstack Web Development
 Project 1
