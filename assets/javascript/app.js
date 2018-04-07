@@ -113,32 +113,6 @@ $(document).ready(() => {
       $("#artist").css("border", "none");
       $("#artist").attr("placeholder", "Submit!");
     }
-    // drawing.image = canvasImage;
-    // drawing.artist = artist;
-    // // Push image data to the database
-    // database.ref().push(drawing);
-    // // Post new drawing to twitter bot
-    // var params = {
-    //   "media_data": canvasImage.substring(22)
-    // };
-    // let imageID = "";
-    // cb.__call("media_upload", params, function (reply, rate, err) {
-    //   imageID = reply.media_id_string;
-    //   cb.__call(
-    //     "statuses_update",
-    //     {
-    //       "media_ids": imageID,
-    //       "status": "Created By: " + artist
-    //     },
-    //     function (reply, rate, err) {
-    //       if(err) {
-    //         console.log(err);
-    //       }
-    //     });
-    //   }
-    // );
-    // project.clear();
-    // $("#artist").val("");
   });
 
   $("#clear").on("click", function() {
