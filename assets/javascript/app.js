@@ -1,5 +1,10 @@
 paper.install(window);
 
+// Default color assignment
+// moving color variable out here to it can communicate with colorapi.js
+
+var color = "";
+console.log(color);
 $(document).ready(() => {
   // Firebase setup
   var config = {
@@ -25,8 +30,7 @@ $(document).ready(() => {
 
   // Paper.js Tool object constructor, handles the drawing functions below
   const tool = new Tool();
-  // Default color assignment
-  let color = "#000";
+  
   // Initialize a variable to create paths in our drawing functions
   let path;
   let drawing = {

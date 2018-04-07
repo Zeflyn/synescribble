@@ -155,8 +155,8 @@ background: linear-gradient(to right, #535353d0, #000000);
 }
 
 .colorSq {
-  width: 25px;
-  height: 25px;
+  width: 45px;
+  height: 45px;
   border-radius: 5px;
   cursor: pointer;
   margin: 30px 10px 0 10px;
