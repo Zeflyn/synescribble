@@ -2,7 +2,7 @@ paper.install(window);
 
 // color assignment
 // moving color variable out here to it can communicate with colorapi.js
-var color = "";
+let color;
 
 $(document).ready(() => {
   // Firebase setup
@@ -31,6 +31,7 @@ $(document).ready(() => {
   const tool = new Tool();
   
   // Initialize a variable to create paths in our drawing functions
+  color = "#000";
   let path;
   let drawing = {
     artist: "",
@@ -65,7 +66,11 @@ $(document).ready(() => {
   
 
 // On color selection.. grab the data-color attribute containing the hex values
+<<<<<<< HEAD
   $(document).on("click", ".colorSq" function(){
+=======
+  $(document).on("click", ".colorSq", function(){
+>>>>>>> 7c799b7fdf2d6c5caca6531a5e799fbd226d4afc
     color = $(this).attr("data-color");
     console.log(color);
   });
