@@ -47,6 +47,7 @@ body {
 
 #brand {
   font-size: 5em;
+  letter-spacing: 2px;
   font-family: "Chicle", sans-seriff;
   padding: 0px 0 10px 30px;
 }
@@ -100,8 +101,8 @@ body {
   background-color: white;
   border: solid;
   border-color: black;
-  height: 100px;
-  width: 100px;
+  height: 130px;
+  width: 130px;
 }
 
 .siteFooter {
@@ -160,6 +161,7 @@ background: linear-gradient(to right, #535353d0, #000000);
   border-radius: 5px;
   cursor: pointer;
   margin: 30px 10px 0 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.205), 0 6px 20px 0 rgba(0, 0, 0, 0.116);
 }
 
 #colorSection {
@@ -180,4 +182,27 @@ background: linear-gradient(to right, #535353d0, #000000);
 
 #artist {
   border: none;
+}
+
+#artistName {
+  font-size: 12pt;
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+
+.galleryLabel {
+  display:flex;
+  flex-direction: column;
+  /* margin-left: 10pt; */
+  font-size: 30pt;
+  letter-spacing: 2px;
+  font-family: 'chicle';
+  margin-bottom: 25pt;
+  margin-top: 20pt;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #5353537a, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #5353537a, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
