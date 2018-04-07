@@ -77,13 +77,13 @@ $(document).ready(() => {
     let canvasImage = canvas.toDataURL();
     let artist = $("#artist").val().trim();
     let artistArray = artist.split("");
-    if(artistArray.length === 0 || artist.indexOf("<") !== -1 || artist.indexOf(">") !== -1) {
+    if(artistArray.length === 0 || artist.length > 12 || artist.indexOf("<") !== -1 || artist.indexOf(">") !== -1) {
       $("#artist").val("");
       $("#artist").css("border", "2px solid red");
-      $("#artist").attr("placeholder", "Please submit a valid name (no angle brackets!)");
+      $("#artist").attr("placeholder", "Please submit a valid name (1-12 characters)");
     } else {
       $("#artist").css("border", "2px solid red");
-      $("#artist").attr("placeholder", "Please submit a valid name (no angle brackets!)");
+      $("#artist").attr("placeholder", "Please submit a valid name (1-12 characters)");
       drawing.image = canvasImage;
       drawing.artist = artist;
       // Push image data to the database
