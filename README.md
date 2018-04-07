@@ -23,6 +23,7 @@ When the "Submit" button is clicked, the user's drawing is appended into the Gal
 
 * ColorAPI for pulling color options
 * Twitter API to post drawings into Twitter account
+* Codebird.js for handling automated posting to twitter
 * Paper.js for drawing 
 * Bootstrap for extra styling and responsiveness
 * Firebase for persistent data storage
@@ -32,7 +33,7 @@ When the "Submit" button is clicked, the user's drawing is appended into the Gal
 
 ## Aarick
 
-Paper.js, Firebase interaction, Twitter API
+Paper.js, Firebase interaction, Twitter API, Codebird implementation
 
 ## Michael
 
