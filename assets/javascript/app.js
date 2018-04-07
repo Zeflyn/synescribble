@@ -1,11 +1,8 @@
 paper.install(window);
 
-// Default color assignment
+// color assignment
 // moving color variable out here to it can communicate with colorapi.js
-
-var color;
-console.log(color);
-
+var color = "";
 
 $(document).ready(() => {
   // Firebase setup
@@ -65,6 +62,13 @@ $(document).ready(() => {
     // .simplfy, a Paper.js method, "smooths" the line and removes imperfections
     path.simplify(10);
   }
+  
+
+// On color selection.. grab the data-color attribute containing the hex values
+  $('.colorSq').on("click", function(){
+    color = $(this).attr("data-color");
+    console.log(color);
+  });
 
   // On submit click...
   $("#nameSubmit").on("click", () => {

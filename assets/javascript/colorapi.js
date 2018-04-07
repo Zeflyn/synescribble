@@ -1,11 +1,10 @@
-
 $(document).ready(() => {
   $('#colorBtn').on("click", function() {
     $("#colorSection").html("");
       // mode choices: monochrome monochrome-dark monochrome-light analogic complement analogic-complement triad quad
       // analogic-complement mode gives colors that are adjacent and across from each other on the color wheel
-      let color = makeColor();
-      let queryURL = "https://www.thecolorapi.com/scheme?rgb=" + color + "&mode=analogic&count=6";
+      let colorRgb = makeColor();
+      let queryURL = "https://www.thecolorapi.com/scheme?rgb=" + colorRgb + "&mode=analogic&count=6";
       $.ajax({
         url: queryURL,
         method: "GET"
@@ -21,11 +20,6 @@ $(document).ready(() => {
          $('#colorSection').append(colorSq);
         }
       });
-  });
-
-  $('.colorSq').on("click", function(){
-   color = $(this).attr('data-color', hexColor);
-    console.log(this);
   });
 
   function makeColor() {
